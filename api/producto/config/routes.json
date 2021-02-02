@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/productos",
+      "handler": "producto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productos/:id",
+      "handler": "producto.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

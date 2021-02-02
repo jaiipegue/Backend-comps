@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calificacion_tiendas",
+  "info": {
+    "name": "calificacion-tienda"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "servicio": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "max": 5
+    }
+  }
+}

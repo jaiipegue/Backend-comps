@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/calificacion-tiendas",
+      "handler": "calificacion-tienda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calificacion-tiendas/count",
+      "handler": "calificacion-tienda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calificacion-tiendas/:id",
+      "handler": "calificacion-tienda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/calificacion-tiendas",
+      "handler": "calificacion-tienda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/calificacion-tiendas/:id",
+      "handler": "calificacion-tienda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/calificacion-tiendas/:id",
+      "handler": "calificacion-tienda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

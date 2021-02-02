@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tiendas",
+  "info": {
+    "name": "Tienda",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "productos": {
+      "via": "tienda",
+      "collection": "producto"
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "calificacion_tiendas": {
+      "collection": "calificacion-tienda"
+    }
+  }
+}

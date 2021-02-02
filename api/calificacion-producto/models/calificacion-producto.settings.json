@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calificacion_productos",
+  "info": {
+    "name": "Calificacion-producto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "calidad": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "max": 5
+    },
+    "precio": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "max": 5
+    },
+    "producto": {
+      "via": "calificacion_productos",
+      "model": "producto"
+    }
+  }
+}

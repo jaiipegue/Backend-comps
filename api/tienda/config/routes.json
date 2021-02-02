@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tiendas",
+      "handler": "tienda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tiendas/:id",
+      "handler": "tienda.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

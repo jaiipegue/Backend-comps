@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/calificacion-productos",
+      "handler": "calificacion-producto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calificacion-productos/count",
+      "handler": "calificacion-producto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calificacion-productos/:id",
+      "handler": "calificacion-producto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/calificacion-productos",
+      "handler": "calificacion-producto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/calificacion-productos/:id",
+      "handler": "calificacion-producto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/calificacion-productos/:id",
+      "handler": "calificacion-producto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
