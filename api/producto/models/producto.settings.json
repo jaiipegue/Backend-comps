@@ -40,13 +40,17 @@
       "plugin": "upload",
       "required": false
     },
-    "tienda": {
-      "model": "tienda",
-      "via": "productos"
-    },
     "calificacion_productos": {
       "collection": "calificacion-producto",
       "via": "producto"
+    },
+    "g_producrto": {
+      "via": "productos",
+      "model": "g-producrto"
+    },
+    "tienda": {
+      "via": "productos",
+      "model": "tienda"
     }
   }
 }

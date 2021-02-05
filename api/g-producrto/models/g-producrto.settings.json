@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tiendas",
+  "collectionName": "g_producrtos",
   "info": {
-    "name": "Tienda",
+    "name": "g-producto",
     "description": ""
   },
   "options": {
@@ -12,18 +12,20 @@
   },
   "attributes": {
     "nombre": {
-      "type": "string"
-    },
-    "direccion": {
       "type": "string",
       "required": true
     },
-    "calificacion_tiendas": {
-      "collection": "calificacion-tienda"
+    "descripcion": {
+      "type": "string",
+      "required": true
     },
     "productos": {
       "collection": "producto",
-      "via": "tienda"
+      "via": "g_producrto"
+    },
+    "categoria": {
+      "model": "categorias",
+      "via": "g_productos"
     }
   }
 }

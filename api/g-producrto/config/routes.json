@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/g-producrtos",
+      "handler": "g-producrto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/g-producrtos/count",
+      "handler": "g-producrto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/g-producrtos/:id",
+      "handler": "g-producrto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/g-producrtos",
+      "handler": "g-producrto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/g-producrtos/:id",
+      "handler": "g-producrto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/g-producrtos/:id",
+      "handler": "g-producrto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
